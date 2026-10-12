@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Universitário Jalinrhabei</title>
+  <link rel="stylesheet" href="estilo.css">
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <section id="view-login" class="screen active">
+    <div class="auth-container">
+      <div class="auth-card">
+        <h1 class="university-title">Centro<br>Universitário<br>Jalinrhabei</h1>
+        <p class="university-desc">
+          Universidade focada em tecnologia desde 1988, com foco em desenvolvimento de software e hardware
+        </p>
+
+        <div class="form-box">
+          <h2 class="form-title">Login</h2>
+          
+          <div class="form-group">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" placeholder="seuemail@jalinrhabei.br">
+          </div>
+
+          <div class="form-group">
+            <label for="login-senha">Senha:</label>
+            <input type="password" id="login-senha" placeholder="••••••••">
+          </div>
+
+          <div class="auth-links">
+            <a href="#" onclick="alert('Instruções de recuperação enviadas!')">Recupere sua senha</a>
+            <a href="#" onclick="showScreen('view-cadastro')">Crie sua conta</a>
+          </div>
+
+          <button class="btn-primary" onclick="showScreen('view-dashboard')">Entrar</button>
+        </div>
+
+        <div class="auth-footer">
+          CENTRO UNIVERSITÁRIO <strong>JALINRHABEI</strong> BRASIL
+        </div>
+      </div>
+    </div>
+  </section>
